@@ -1,0 +1,25 @@
+# các lệnh git cơ bản cần biết;
+* git local : chính là git ở máy mọi người
+   + tạo mới git local : tạo kho lưu trữ ở máy mọi người
+        git init
+   + thêm 1 hoặc nhiều file để lưu vào git
+        git add [tên file1,tên file 2,...] (git add . để thêm tất cả)
+   + kiểm tra xem trạng thái của các file
+        git status
+   + xác nhận commit (tạo commit) là 1 lịch sử lưu trữ trong git
+        git commit -m "tên commit"
+   + kiểm tra vị trí nhánh hiện tại
+        git branch
+   + kết nối giữa git local với kho lưu trữa từ xa
+        git remote add origin [link repository]
+   + tạo 1 nhánh ở trên git remote
+        git branch -M [tên nhánh]
+   + tạo và chuyển nhánh ở git local
+        git branch -b [tên nhánh]
+   + đẩy code từ local lên github(remote)
+        git push -u origin [tên nhánh hiện tại]
+        // cập nhật : git push
+
+* git trên github :  repository remote (kho lưu trữ từ xa)
+  + kiểm tra vị trí nhánh hiện tại
+        git branch -r
