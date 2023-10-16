@@ -10,14 +10,16 @@
         git commit -m "tên commit"
    + kiểm tra vị trí nhánh hiện tại
         git branch
-   + kết nối giữa git local với kho lưu trữa từ xa
+   + kết nối giữa git local với kho lưu trữ từ xa
         git remote add origin [link repository]
-   + tạo 1 nhánh ở trên git remote
+   + kiểm tra remote
+        git remote -v
+   + tạo 1 nhánh ở trên git remote và xóa nhánh hiện tại ở local
         git branch -M [tên nhánh]
    + tạo và chuyển nhánh ở git local
-        git branch -b [tên nhánh]
+        git checkout -b [tên nhánh]
    + đẩy code từ local lên github(remote)
-        git push -u origin [tên nhánh hiện tại]
+        git push -u origin [tên nhánh trên remote]
         // cập nhật : git push
 
 * git trên github :  repository remote (kho lưu trữ từ xa)
